@@ -1,0 +1,175 @@
+*{
+  margin: 0; 
+  padding: 0;
+}
+
+body{
+    background: rgb(10, 218, 233);
+}
+
+
+.fondo{
+    width: 1000px;
+    height: 500px;
+    background: rgb(144, 220, 255);
+    position: relative;
+    margin: 100px auto;
+    z-index: 0;
+    box-shadow: #fffefe 0 0 10px 10px;
+    border-radius: 50px;
+}
+
+.fondo .cara{
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    z-index: 2;
+}
+
+.fondo .sombrero{
+    position: absolute;
+    bottom: 76%;
+    right: 38%;
+    z-index: 3;
+   
+
+}
+.fondo {
+    float: center;
+    animation: flotar 3s ease-in-out infinite;
+  }
+  
+  @keyframes flotar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+ 
+
+  
+  .imagen-hover {
+    display: none;
+    position: absolute;
+    top: -70%;
+    left: -27px;
+    z-index: 1;
+    width: 300px;
+    
+  }
+  
+  .sombrero:hover img:first-child {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .sombrero:hover .imagen-hover {
+    display: block;
+    opacity: 1;
+  }
+
+   
+  .imagen-hover1 {
+    display: none;
+    position: absolute;
+    top: -10%;
+    left: -10px;
+    z-index: 1;
+    width: 100px;
+    
+  }
+  
+  .ojoizquierdo:hover img:first-child {
+    visibility: hidden;
+    opacity: 0;
+    transition: .10s;
+  }
+  
+
+
+  .ojoizquierdo:hover .imagen-hover1 {
+    display: block;
+    opacity: 1;
+   
+  }
+  
+
+
+
+.fondo .ojoderecho{
+    position: absolute;
+    z-index: 8;
+    right: 41%;
+    top: 35%;
+}
+
+
+.fondo .ojoizquierdo{
+    position: absolute;
+    z-index: 9;
+    left: 41%;
+    top: 35%;
+}
+
+
+
+.fondo .nariz{
+    position: absolute;
+    z-index: 10;
+    bottom: 24%;
+    right: 43%;
+    transition: .2s;
+    
+}
+
+.fondo .nariz:hover{
+  transform: translateY(-15px);
+  transition: .2s;
+  
+  
+}
+
+.fondo .orejaderecha{
+    position: absolute;
+    z-index: -9;
+    right: 31%;
+    top: 28%;
+}
+
+.fondo .orejaizquierda{
+    position: absolute;
+    z-index: -9;
+    right: 58%;
+    top: 28%;
+}
+
+.fondo .piederecho{
+    position: absolute;
+    right: 50%;
+    top: 88%;
+}
+
+.fondo .pieizquierdo{
+    position: absolute;
+    right: 35%;
+    top: 88%;
+}
+
+.fondo .mostacho{
+    position: absolute;
+    right: 41%;
+    top: 70%;
+    z-index: 8;
+}
+
+
+
+
+      
+
